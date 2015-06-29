@@ -3,7 +3,7 @@
   "version": "0.0.7",
   "author": "Yanxing Wang <demiwangya@gmail.com>",
   "main": "app/index.html",
-  "dev": true,
+  "dev": false,
   "license": "MIT",
   "repository": {
     "type": "git",
