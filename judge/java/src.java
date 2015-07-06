@@ -4,10 +4,10 @@ import java.lang.*;
 import java.io.*;
 import tests.test_common;
 import datastruct.*;
-import tests.48;
+import tests.bst_to_dlist;
 
 public class src {
     public static void main (String[] args) throws java.lang.Exception {
-        48.judge();
+        bst_to_dlist.judge();
     }
 }
