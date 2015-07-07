@@ -1,10 +1,10 @@
 {
-    "name": "Search Sorted Matrix",
+    "name": "Search a 2D Matrix",
     "id": "search-sorted-mat",
     "discuss_link": "",
     "desc": "<p>\n    Given an M x N matrix, where every row and column is sorted. Write an efficient function that searches a number in this matrix. \n</p>\n<p>\n    For example, given matrix:\n<pre>\n1, 2, 4\n2, 6, 8\n3, 7, 9\n</pre>\nThe result of searching <code>6</code> is <code>true</code>.\n</p>",
     "difficulty": "Medium",
-    "source": "CC150",
+    "source": "LeetCode",
     "time": "2015-02-16 13:34:01",
     "tags": [
         "Binary Search"
@@ -14,6 +14,7 @@
     "code_ruby": "# @param mat: integer matrix, target: integer\n# @return boolean\ndef search_matrix(mat, target)\nend",
     "code_python": "# @param mat: integer matrix, target: integer\n# @return boolean\ndef search_matrix(mat, target):",
     "code_lua": "-- @param mat: integer matrix, target: integer\n-- @return boolean\nfunction search_matrix(mat, target)\nend",
+    "code_scala": "",
     "in_type_cpp": [
         "vector<vector<int>>",
         "int"

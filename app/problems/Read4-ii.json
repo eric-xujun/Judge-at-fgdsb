@@ -1,7 +1,7 @@
 {
     "name": "Read N Characters Given Read4 II - Call multiple times",
     "id": "Read4-ii",
-    "discuss_link": "",
+    "discuss_link": "http://leetcode0.blogspot.com/2015/03/read-n-characters-given-read4-ii-call.html",
     "desc": "The API: <code>int read4(char *buf)</code> reads 4 characters at a time from a file.\n<br>\n<br>\nThe return value is the actual number of characters read. For example, it returns 3 if there is only 3 characters left in the file.\n<br>\n<br>\nBy using the <code>read4</code> API, implement the function <code>int read(char *buf, int n)</code> that reads n characters from the file.\n<br>\n<br>\n<b>Note:</b>\n<br>\n<br>\nThe read function may be called multiple times.",
     "difficulty": "Medium",
     "source": "Facebook",

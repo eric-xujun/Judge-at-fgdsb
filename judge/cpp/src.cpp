@@ -1,6 +1,6 @@
 #include "common.h"
 #include "solution.h"
-#include "tests/a-plus-b.h"
+#include "tests/one-edit-distance.h"
 
 int main() {
     judge();

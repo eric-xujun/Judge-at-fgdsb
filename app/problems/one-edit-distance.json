@@ -1,0 +1,32 @@
+{
+    "name": "One Edit Distance",
+    "id": "one-edit-distance",
+    "discuss_link": "ss",
+    "desc": "",
+    "difficulty": "Medium",
+    "source": "LeetCode",
+    "time": "2015-07-07 00:33:42",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}

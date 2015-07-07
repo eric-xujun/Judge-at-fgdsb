@@ -275,9 +275,9 @@
     {
         "time": "2015-02-16 13:34:01",
         "id": "search-sorted-mat",
-        "name": "Search Sorted Matrix",
+        "name": "Search a 2D Matrix",
         "difficulty": "Medium",
-        "source": "CC150"
+        "source": "LeetCode"
     },
     {
         "time": "2015-02-16 14:34:50",
@@ -341,5 +341,12 @@
         "name": "Read N Characters Given Read4 II - Call multiple times",
         "difficulty": "Medium",
         "source": "Facebook"
+    },
+    {
+        "time": "2015-07-07 00:33:42",
+        "id": "one-edit-distance",
+        "name": "One Edit Distance",
+        "difficulty": "Medium",
+        "source": "LeetCode"
     }
 ]
