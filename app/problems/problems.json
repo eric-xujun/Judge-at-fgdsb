@@ -334,5 +334,12 @@
         "name": "Read N Characters Given Read4",
         "difficulty": "Medium",
         "source": "Facebook"
+    },
+    {
+        "time": "2015-07-06 16:48:01",
+        "id": "Read4-ii",
+        "name": "Read N Characters Given Read4 II - Call multiple times",
+        "difficulty": "Medium",
+        "source": "Facebook"
     }
 ]
