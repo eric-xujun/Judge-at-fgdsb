@@ -348,5 +348,12 @@
         "name": "One Edit Distance",
         "difficulty": "Medium",
         "source": "LeetCode"
+    },
+    {
+        "time": "2015-07-09 10:21:12",
+        "id": "k-sorted-array",
+        "name": "Sort a nearly sorted (or K sorted) array",
+        "difficulty": "Medium",
+        "source": "GeeksforGeeks"
     }
 ]
