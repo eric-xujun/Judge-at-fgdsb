@@ -4,10 +4,10 @@ import java.lang.*;
 import java.io.*;
 import tests.test_common;
 import datastruct.*;
-import tests.Read4_ii;
+import tests.valid_UTF_8;
 
 public class src {
     public static void main (String[] args) throws java.lang.Exception {
-        Read4_ii.judge();
+        valid_UTF_8.judge();
     }
 }

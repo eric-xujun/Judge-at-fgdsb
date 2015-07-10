@@ -355,5 +355,12 @@
         "name": "Sort a nearly sorted (or K sorted) array",
         "difficulty": "Medium",
         "source": "GeeksforGeeks"
+    },
+    {
+        "time": "2015-07-09 23:39:10",
+        "id": "valid-UTF-8",
+        "name": "Valid UTF-8",
+        "difficulty": "Medium",
+        "source": "Google"
     }
 ]

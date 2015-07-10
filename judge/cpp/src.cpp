@@ -1,6 +1,6 @@
 #include "common.h"
 #include "solution.h"
-#include "tests/one-edit-distance.h"
+#include "tests/valid-UTF-8.h"
 
 int main() {
     judge();
