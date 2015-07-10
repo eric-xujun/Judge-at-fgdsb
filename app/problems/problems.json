@@ -362,5 +362,12 @@
         "name": "Valid UTF-8",
         "difficulty": "Medium",
         "source": "Google"
+    },
+    {
+        "time": "2015-07-10 16:24:12",
+        "id": "draw-circle",
+        "name": "Write code to draw a circle",
+        "difficulty": "Easy",
+        "source": "Uber"
     }
 ]

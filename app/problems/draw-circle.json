@@ -1,0 +1,32 @@
+{
+    "name": "Write code to draw a circle",
+    "id": "draw-circle",
+    "discuss_link": "",
+    "desc": "",
+    "difficulty": "Easy",
+    "source": "Uber",
+    "time": "2015-07-10 16:24:12",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "public class Solution {\r\n    \r\n    public void drawCircle(int[][] board){\r\n        int r = board.length / 2;\r\n        \r\n        int xCenter = r;\r\n        int yCenter = r;\r\n        \r\n        for(int i = 0; i < board.length; i++){\r\n            for(int j = 0; j < board.length; j++){\r\n                int x = xCenter - i;\r\n                int y = yCenter - j;\r\n                if(Math.round(Math.sqrt(x * x + y * y)) == r){\r\n                    board[i][j] = '*';\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
