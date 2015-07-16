@@ -1,0 +1,32 @@
+{
+    "name": "String Shift Group",
+    "id": "string-shift-group",
+    "discuss_link": "",
+    "desc": "",
+    "difficulty": "Easy",
+    "source": "Uber",
+    "time": "2015-07-16 16:38:47",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "public class GroupStrings {\n\n    public static void main(String[] args) {\n        List<String> input = Arrays.asList(\"abc\", \"bcd\", \"adef\", \"xyz\", \"az\", \"ba\", \"a\", \"z\");\n\n        System.out.println(groupStrings(input));\n    }\n\n    public static Collection<List<String>> groupStrings(List<String> input) {\n        if(input.isEmpty()) {\n            return null;\n        }\n        List<String> convertedInput = new ArrayList<String>();\n        for(String s : input) {\n            convertedInput.add(convert(s, 'a'));\n        }\n        Map<String, List<String>> map = new HashMap<String, List<String>>();\n        for(int i = 0; i < convertedInput.size(); i++) {\n            String s = convertedInput.get(i);\n            if(!map.containsKey(s)) {\n                map.put(s, Arrays.asList(input.get(i)));\n            } else {\n                List<String> group = new ArrayList<String>(map.get(s));\n                group.add(input.get(i));\n                map.put(s, group);\n            }\n        }\n        Collection<List<String>> resultSet = map.values();\n        return resultSet;\n    }\n    \n    private static String convert(String input, char c) {\n        char firstChar = input.charAt(0);\n        int offset = c - firstChar;\n        StringBuffer sb = new StringBuffer();\n        for(int i = 0; i < input.length(); i++) {\n            sb.append((char) ((input.charAt(i) + offset) % 26));\n        }\n        return sb.toString();\n    }\n}",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}

@@ -376,5 +376,12 @@
         "name": "Find Path From Root to Maximun Node",
         "difficulty": "Medium",
         "source": "Unknown"
+    },
+    {
+        "time": "2015-07-16 16:38:47",
+        "id": "string-shift-group",
+        "name": "String Shift Group",
+        "difficulty": "Easy",
+        "source": "Uber"
     }
 ]
