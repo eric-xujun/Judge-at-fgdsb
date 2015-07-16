@@ -369,5 +369,12 @@
         "name": "Write code to draw a circle",
         "difficulty": "Easy",
         "source": "Uber"
+    },
+    {
+        "time": "2015-07-16 15:16:38",
+        "id": "path-to-max-node",
+        "name": "Find Path From Root to Maximun Node",
+        "difficulty": "Medium",
+        "source": "Unknown"
     }
 ]

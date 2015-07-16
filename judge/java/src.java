@@ -4,10 +4,10 @@ import java.lang.*;
 import java.io.*;
 import tests.test_common;
 import datastruct.*;
-import tests.valid_UTF_8;
+import tests.path_to_max_node;
 
 public class src {
     public static void main (String[] args) throws java.lang.Exception {
-        valid_UTF_8.judge();
+        path_to_max_node.judge();
     }
 }

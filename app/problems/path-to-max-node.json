@@ -1,0 +1,32 @@
+{
+    "name": "Find Path From Root to Maximun Node",
+    "id": "path-to-max-node",
+    "discuss_link": "http://www.mitbbs.ca/article_t/JobHunting/33008787.html",
+    "desc": "Given a Binary tree (Not binary Search Tree ), Print a path from Root to Node in Binary Tree\n\nhttp://algorithms.tutorialhorizon.com/print-a-path-from-root-to-node-in-binary-tree/",
+    "difficulty": "Medium",
+    "source": "Unknown",
+    "time": "2015-07-16 15:16:38",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "public static ArrayList<Integer> get(TreeNode root) {\n        if (root == null) return null;\n        ArrayList<Integer> left = get(root.left);\n        ArrayList<Integer> right = get(root.right);\n        ArrayList<Integer> list;\n        if (left == null && right == null || (left == null || root.val > \nleft.get(0)) && (right == null || root.val > right.get(0))) {\n            list = new ArrayList<Integer>();\n        }\n        else if (left != null && right != null) {\n            list = left.get(0) > right.get(0) ? left : right;\n        }\n        else {\n            list = left != null ? left : right;\n        }\n        list.add(root.val);\n        return list;\n    }",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
