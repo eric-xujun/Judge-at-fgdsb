@@ -2,7 +2,7 @@
     "name": "Time Traveling Hashtable",
     "id": "timestamp-hashmap",
     "discuss_link": "http://www.meetqun.com/thread-5518-1-1.html",
-    "desc": "设计一个类Time Traveling Hashtable，有以下方法：\n<br>\nvoid put(double t, String k, String v) 在某一时刻t以k为键v为值加入hashtable \n<br>\nString get(double t, String k) 对于k，获得某一时刻t之前（或相等）离t时间上最近的value ) \n<br>\nvoid remove(double t, String k) 对于k，删除某一时刻t之前（或相等）离t时间上最近的value\n<br>\n解答： 对于每个K对应的V，都需要以时间T为标准有序插入，要兼顾插入和读取的复杂度，应该使用平衡二叉树，Java中对应是TreeMap\n<br>\n因此主的数据结构为 \n<br>\nMap<String, TreeMap<Double, String>> table = new HashMap<String, TreeMap<Double, String>>(); \n<br>\n即<K, <T, V>>的结构，为每一个Key建立一个TreeMap，TreeMap以时间T为键。\n<br>\nfloorKey （Returns the greatest key less than or equal to the given key, or null if there is no such key）",
+    "desc": "设计一个类Time Traveling Hashtable，有以下方法：\n<br>\nvoid put(double t, String k, String v) 在某一时刻t以k为键v为值加入hashtable \n<br>\nString get(double t, String k) 对于k，获得某一时刻t之前（或相等）离t时间上最近的value ) \n<br>\nvoid remove(double t, String k) 对于k，删除某一时刻t之前（或相等）离t时间上最近的value\n<br>\nwrote an extend to hash map. store will put a timestamp and get will also have a timestamp\n<br>\nso the get function also have an timestamp parameter, it will return the first element that is larger than the current timestamp\n<br>\n解答： 对于每个K对应的V，都需要以时间T为标准有序插入，要兼顾插入和读取的复杂度，应该使用平衡二叉树，Java中对应是TreeMap\n<br>\n因此主的数据结构为 \n<br>\n<code>\"Map<String, TreeMap<Double, String>> table = new HashMap<String, TreeMap<Double, String>>(); \"</code>\n<br>\n即<K, <T, V>>的结构，为每一个Key建立一个TreeMap，TreeMap以时间T为键。\n<br>\nfloorKey （Returns the greatest key less than or equal to the given key, or null if there is no such key）",
     "difficulty": "Medium",
     "source": "Uber",
     "time": "2015-07-17 11:18:37",
