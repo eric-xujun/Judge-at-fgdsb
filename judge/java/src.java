@@ -4,10 +4,10 @@ import java.lang.*;
 import java.io.*;
 import tests.test_common;
 import datastruct.*;
-import tests.path_to_max_node;
+import tests.timestamp_hashmap;
 
 public class src {
     public static void main (String[] args) throws java.lang.Exception {
-        path_to_max_node.judge();
+        timestamp_hashmap.judge();
     }
 }

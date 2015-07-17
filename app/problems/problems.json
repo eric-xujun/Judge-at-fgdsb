@@ -383,5 +383,12 @@
         "name": "String Shift Group",
         "difficulty": "Easy",
         "source": "Uber"
+    },
+    {
+        "time": "2015-07-17 11:18:37",
+        "id": "timestamp-hashmap",
+        "name": "Time Traveling Hashtable",
+        "difficulty": "Medium",
+        "source": "Uber"
     }
 ]
