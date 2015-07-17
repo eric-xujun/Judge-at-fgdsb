@@ -390,5 +390,12 @@
         "name": "Time Traveling Hashtable",
         "difficulty": "Medium",
         "source": "Uber"
+    },
+    {
+        "time": "2015-07-17 15:09:50",
+        "id": "nested-output",
+        "name": "Nested JSON String Output",
+        "difficulty": "Medium",
+        "source": "Uber"
     }
 ]

@@ -1,0 +1,32 @@
+{
+    "name": "Nested JSON String Output",
+    "id": "nested-output",
+    "discuss_link": "",
+    "desc": "<code>\ninput = {\n   a: { b : { c : 1 }, f : {g : 2}},\n   c: { d : 2 },\n   e: None,\n}</code>\n<br>\n<code>output = {'a.b.c': 1, 'a.f.g': 2, 'c.d': 2, 'e': None}</code>",
+    "difficulty": "Medium",
+    "source": "Uber",
+    "time": "2015-07-17 15:09:50",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
