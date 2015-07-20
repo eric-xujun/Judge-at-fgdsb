@@ -2,9 +2,9 @@
     "name": "Compress String",
     "id": "compress-string",
     "discuss_link": "http://www.fgdsb.com/2015/01/03/compress-string/",
-    "desc": "<p>Implement a function to perform basic string compression using the counts of repeated characters.<br><br>For example, the string <code>aabcccccaaa</code> would become <code>a2b1c5a3</code>.<br><br>If the compressed string would not become smaller than the original string, you should return the original one.</p>",
+    "desc": "<p>Implement a function to perform basic string compression using the counts of repeated characters.<br><br>For example, the string <code>aabcccccaaa</code> would become <code>a2b1c5a3</code>.<br><br>If the compressed string would not become smaller than the original string, you should return the original one.</p>\n<p>然后问有什么问题，答曰decode的时候111aaa会encode成313a然后decode成313个a。提出每encode一个就插入一个特殊符号标记，他说可以。然后追加问是否可以不用特殊符号，答曰创建新的计数单位，比如用A代表1B代表2，然后aaa就变成Ca（you get the idea），这样就不需要插入额外符号了。</p>",
     "difficulty": "Easy",
-    "source": "Google",
+    "source": "Uber",
     "time": "2015-01-31 17:05:20",
     "tags": [],
     "code_cpp": "string compress(string& str) {\n}",
@@ -12,6 +12,7 @@
     "code_ruby": "# @param str, String\n# @return String\ndef compress(str)\nend",
     "code_python": "# @param str, string\n# @return string\ndef compress(string):",
     "code_lua": "-- @param str, string\n-- @return string\nfunction compress(str)\nend",
+    "code_scala": "",
     "in_type_cpp": [
         "string"
     ],
