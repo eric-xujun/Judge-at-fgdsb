@@ -404,5 +404,12 @@
         "name": "Nested Sum",
         "difficulty": "Easy",
         "source": "LinkedIn"
+    },
+    {
+        "time": "2015-07-20 16:17:53",
+        "id": "nested-iterator",
+        "name": "Nested List Iterator",
+        "difficulty": "Hard",
+        "source": "Google"
     }
 ]

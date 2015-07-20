@@ -4,10 +4,10 @@ import java.lang.*;
 import java.io.*;
 import tests.test_common;
 import datastruct.*;
-import tests.timestamp_hashmap;
+import tests.nested_iterator;
 
 public class src {
     public static void main (String[] args) throws java.lang.Exception {
-        timestamp_hashmap.judge();
+        nested_iterator.judge();
     }
 }
