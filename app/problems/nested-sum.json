@@ -1,0 +1,32 @@
+{
+    "name": "Nested Sum",
+    "id": "nested-sum",
+    "discuss_link": "",
+    "desc": "<p>For example, given the list {{1,1},2,{1,1}} the function should return 10 (four 1's at depth 2, one *2 at depth 1)</p>\n\n<p>Given the list {1,{4,{6}}} the function should return 27 (one 1 at depth 1, one 4 at depth 2, and *one 6 at depth 3)</p>",
+    "difficulty": "Easy",
+    "source": "LinkedIn",
+    "time": "2015-07-20 00:18:23",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "public int depthSum (List<NestedInteger> input)\n{\n     //Implement this function\n}\n\n/**\n * This is the interface that allows for creating nested lists. You should not implement it, or speculate about its implementation\n */\npublic interface NestedInteger \n{\n    // Returns true if this NestedInteger holds a single integer, rather than a nested list\n    public boolean isInteger();\n\n    // Returns the single integer that this NestedInteger holds, if it holds a single integer\n    // Returns null if this NestedInteger holds a nested list\n    public Integer getInteger();\n\n    // Returns the nested list that this NestedInteger holds, if it holds a nested list\n    // Returns null if this NestedInteger holds a single integer\n    public List<NestedInteger> getList();\n}",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
