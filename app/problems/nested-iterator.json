@@ -2,7 +2,7 @@
     "name": "Nested List Iterator",
     "id": "nested-iterator",
     "discuss_link": "http://www.evanhoffman.com/evan/2010/04/17/code-to-flatten-a-list-in-java-with-and-without-recursion/",
-    "desc": "<p>assume you have a list of objects, some of which may be lists of arbitrary depths. Write a function to return the list “flattened,” so sublists are all in the “main” list. I solved it recursively pretty easily, but it took some thought to do it without recursion.</p>\n<p>1. recursion</p>\n<p>2. nested iterator</p>\n<p>3. dfs</p>",
+    "desc": "<p>assume you have a list of objects, some of which may be lists of arbitrary depths. Write a function to return the list “flattened,” so sublists are all in the “main” list. I solved it recursively pretty easily, but it took some thought to do it without recursion.</p>\n<p>1. recursion</p>\n<p>2. nested iterator</p>\n<p>3. dfs</p>\n<p>4. stack nested list item</p>",
     "difficulty": "Hard",
     "source": "Google",
     "time": "2015-07-20 16:17:53",
