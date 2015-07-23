@@ -467,8 +467,8 @@ fgdsbControllers.controller('ProblemDetailCtrl', ['$scope', '$routeParams', 'Pro
         $scope.cur_lang = 'C++';
 
         var judge_funcs = {
-            "C++" : judge_cpp,
             "Java" : judge_java,
+            "C++" : judge_cpp,
             "Ruby" : judge_ruby,
             "Python" : judge_python,
             "Lua" : judge_lua,
