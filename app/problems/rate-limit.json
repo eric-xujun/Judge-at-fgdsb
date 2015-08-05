@@ -1,0 +1,32 @@
+{
+    "name": "Rate Limit",
+    "id": "rate-limit",
+    "discuss_link": "",
+    "desc": "如何限制访问的频率？回答用 Token Bucket",
+    "difficulty": "Hard",
+    "source": "Google",
+    "time": "2015-08-05 15:38:11",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "var rate = 5.0; // unit: messages\nvar per  = 8.0; // unit: seconds\nvar allowance = rate; // unit: messages\nvar lastTime = new Date(); // floating-point, e.g. usec accuracy. Unit: seconds\nwhile (var msg = recv()) {\n  var currentTime = new Date();\n  var timeElapsed = (currentTime - lastTime) / 1000;\n  var lastTime = currentTime;\n  allowance += timeElapsed * (rate / per);\n  if (allowance > rate) {\n    allowance = rate; // throttle\n  }\n  if (allowance < 1.0) {\n    discard(msg);\n  } else {\n    forward(msg);\n    allowance -= 1.0;\n  }\n}",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
