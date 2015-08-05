@@ -1,0 +1,32 @@
+{
+    "name": "Time To Live HashTable",
+    "id": "TTLHashMap",
+    "discuss_link": "",
+    "desc": "",
+    "difficulty": "Medium",
+    "source": "Google",
+    "time": "2015-08-05 15:45:10",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "public class TTLHashMap<K, V> {\n    HashMap<K, V> _map = new HashMap<>();\n    Timer _timer = new Timer();\n    public void put(K key, V val, long ttl) {\n        _map.put(key, val);\n        _timer.schedule(new TimerTask() {\n            @Override\n            public void run() {\n                _map.remove(key);\n            }\n        }, ttl);\n    }\n    public V get(K key) {\n        return _map.get(key);\n    }\n    public void close() {\n        _timer.cancel();\n    }\n    @Override\n    public void finalize() throws Throwable {\n        close();\n        super.finalize();\n    }\n    public static void main(String[] args) throws InterruptedException {\n        TTLHashMap<Integer, Integer> dict = new TTLHashMap<>();\n        dict.put(0, 0, 0);\n        dict.put(4, 4, 4);\n        Thread.sleep(3);\n        System.out.println(dict.get(0));\n        while (dict.get(4) != null) {\n            System.out.println(dict.get(4));\n        }\n        dict.close();\n    }\n}",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}

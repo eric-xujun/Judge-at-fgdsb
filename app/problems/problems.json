@@ -425,5 +425,12 @@
         "name": "Rate Limit",
         "difficulty": "Hard",
         "source": "Google"
+    },
+    {
+        "time": "2015-08-05 15:45:10",
+        "id": "TTLHashMap",
+        "name": "Time To Live HashTable",
+        "difficulty": "Medium",
+        "source": "Google"
     }
 ]
