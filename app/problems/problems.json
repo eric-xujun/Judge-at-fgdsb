@@ -432,5 +432,12 @@
         "name": "Time To Live HashTable",
         "difficulty": "Medium",
         "source": "Google"
+    },
+    {
+        "time": "2015-08-05 16:09:28",
+        "id": "parse-csv",
+        "name": "parse CSV",
+        "difficulty": "Easy",
+        "source": "Uber"
     }
 ]
