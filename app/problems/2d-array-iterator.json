@@ -1,0 +1,32 @@
+{
+    "name": "2D Array Iterator",
+    "id": "2d-array-iterator",
+    "discuss_link": "",
+    "desc": "",
+    "difficulty": "Hard",
+    "source": "Uber",
+    "time": "2015-08-05 16:34:26",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "public class Array2D<T> {\r\n        ArrayList<ArrayList<T>> array;\r\n        public Array2D(){\r\n                array = new ArrayList<ArrayList<T>>();\r\n        }\r\n        public void addLine(ArrayList<T> nums){\r\n                array.add(new ArrayList(nums));\r\n        }\r\n        public T get(int x, int y){\r\n                if(x >= array.size()) return null;\r\n                ArrayList<T> l = array.get(x);\r\n                if(l == null || y >= l.size()) return null;\r\n                return l.get(y);\r\n        }\r\n        public Iterator iterator() {\r\n                // TODO Auto-generated method stub\r\n                return new a2Iterator();\r\n        }\r\n        private class a2Iterator implements Iterator<T>{\r\n                int r;\r\n                int c;\r\n                ArrayList<T> curArray;\r\n                public a2Iterator(){\r\n                        r = 0;\r\n                        c = 0;\r\n                }\r\n                @Override\r\n                public boolean hasNext() {\r\n                        if(curArray == null && array.size() == 0){ \r\n                                return false;\r\n                        }else if(r >= array.size()) return false;\r\n                        return true;\r\n                }\r\n                @Override\r\n                public T next() {\r\n                        if(c == 0) curArray = array.get(r);\r\n                        T ret = curArray.get(c);\r\n                        if(curArray.size()-1 == c){\r\n                                r ++;\r\n                                c = 0;\r\n                        }else\r\n                                c ++;\r\n                        return ret;\r\n                }\r\n                @Override\r\n                public void remove() {\r\n                        ArrayList pre = curArray;\r\n                        int x = c;\r\n                        int y = r;\r\n                        if(x == 0){\r\n                                y--;\r\n                                pre = array.get(y);\r\n                                x = pre.size();\r\n                        }\r\n                        x--;\r\n                        pre.remove(x);\r\n                        if(pre.size() == 0){\r\n                                array.remove(y);\r\n                                r--;\r\n                        }\r\n                        if(c != 0) c--;\r\n                }\r\n        }\r\n}",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
