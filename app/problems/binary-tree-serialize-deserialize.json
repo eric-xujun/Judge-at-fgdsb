@@ -1,0 +1,32 @@
+{
+    "name": "Binary Tree Serialize / Deserialize",
+    "id": "binary-tree-serialize-deserialize",
+    "discuss_link": "",
+    "desc": "",
+    "difficulty": "Medium",
+    "source": "Facebook",
+    "time": "2015-08-05 15:05:18",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "class Solution {\n    public String serialize(TreeNode root) {\n        StringBuilder sb = new StringBuilder();\n        serialize(root, sb);\n        return sb.toString();\n    }\n    \n    private void serialize(TreeNode root, StringBuilder sb) {\n        if (sb.length() != 0) sb.append(\" \");\n        if (root == null) {\n            sb.append(\"#\");\n            return;\n        }\n        sb.append(root.val);\n        serialize(root.left, sb);\n        serialize(root.right, sb);\n    }\n    \n\n    public TreeNode deserialize(String data) {\n        String[] labels = data.split(\" \");\n        int[] i = { 0 };\n        return deserialize(labels, i);\n    }\n    \n    private TreeNode deserialize(String[] labels, int[] i) {\n        String label = labels[i[0]++];\n        if (label.equals(\"#\")) return null;\n        TreeNode root = new TreeNode(Integer.valueOf(label));\n        root.left = deserialize(labels, i);\n        root.right = deserialize(labels, i);\n        return root;\n    }\n}",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
