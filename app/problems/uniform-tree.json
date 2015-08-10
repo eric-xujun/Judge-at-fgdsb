@@ -1,0 +1,32 @@
+{
+    "name": "uniform tree",
+    "id": "uniform-tree",
+    "discuss_link": "http://www.quora.com/Write-a-program-to-count-the-number-of-uni-value-subtrees-in-a-given-tree",
+    "desc": "Write a program to count the number of uni-value subtrees in a given tree.",
+    "difficulty": "Medium",
+    "source": "Unknown",
+    "time": "2015-08-09 22:26:44",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
