@@ -1,0 +1,32 @@
+{
+    "name": "Evaluate Expressions",
+    "id": "evaluate-expressions",
+    "discuss_link": "http://www.meetqun.com/thread-9005-1-1.html",
+    "desc": "计算一个表达式的值的。要求自行设计表达式的数据结构并计算表达式的值。\n有几种特殊情况\n1. 单输入一个数，比如 [0]，是合法，结果为0；\n2. 单输入一个运算符也是合法的。 无数字运算的 '+'， '-'， '/' 结果为 0, 单个 '*' 的结果为 1.\n3. 一个运算符可以有好几个计算数字。 比如输入为 ['+', 1, 2, 3]，结果为1 + 2 + 3 = 6.\n4. 表达式可嵌套,['+', 1, 2, ['*', 1, 3]]，这样结果为 1 + 2 + 1 * 2 = 5.\n输入一定合法，不用考虑给了两个连续数字却没有运算符的情况，也不用考虑除数为0的情况。",
+    "difficulty": "Medium",
+    "source": "Zenefits",
+    "time": "2015-08-14 15:24:43",
+    "tags": [],
+    "code_cpp": "",
+    "code_java": "// This is the text editor interface\n// Anything you type or change here will be seen by the other person in real time\n// An \"expression\" is either a number, or a list (AKA vector/array) with the first element one of '+', '-', '*', '/' ,\n// and then other expressions.\n// Write a function \"evaluate\" that gets an expression and returns its value.\n// ['+', 1, 2] --> 3\n// ['*', 3, ['+', 1, 10]] --> 33\n// ['+', 1000, 1200] --> 2200\n// ['/', 6, ['+', 1, ['*', 1, 1]]] --> 3\n// ['+', 1, 2, 3] --> 63\n// ['+', ['*', 1, 2], 3] --> 5\n// ['-', ['*', 5, 5], ['*', 2, 2]] --> 21\n// Assume - / -- only take two operands\n// + * take any number of operands\n// ['*', 0, 5] --> 0\n// ['-', 2, 1] --> 1\npublic class EvaluationExpression {\n        public int valueOfExpression(ENode root) {\n                if(root == null)        return 0;        8 a. x' I9 m+ {. ~% O/ x$ K\n                switch(root.op){\n                        case '+': {' x7 S+ b+ p! t- ^1 R9 }& _  K\n                                        int val = 0;\n                                        for(ENode nd : root.child) {6 y9 k# e1 r. f+ n\" }  {# P\n                                                val += valueOfExpression(nd);* l1 f3 _6 A- K4 P\n                                        }\n                                        return val;\n                                } $ r: L/ Z0 ^  \\$ e2 g5 n( r\n                        case '-': {3 n* n0 c2 _7 Z+ u- m\n                                        int val = (root.child.size() == 0) ? 0 : valueOfExpression(root.child.get(0));                                ) f. {- _# u- F% q\n                                        for(int i = 1; i < root.child.size(); ++i) {) k  y' T& l1 L. A0 }6 U\n                                                val -= valueOfExpression(root.child.get(i));9 P! d. b1 z' i/ h9 d/ H# @6 F\n                                        }( E4 A/ z0 r: C4 z2 p6 c; ^5 F& P  t\n                                        return val;\n                                } 7 Z3 g' b/ F5 c5 T\n                        case '*': {\" k1 L: D- L8 U7 s; ^& x/ c& W) k\n                                        int val = 1;; i9 q' ~+ B( \\5 j\n                                        for(ENode nd : root.child) {\n                                                val *= valueOfExpression(nd);\n                                        }\n                                        return val;& S8 y% L$ O6 D+ y, k\n                                }\n                        case '/': {. k' b* `\" y' T1 r, c7 d3 k% Q. ^! h\n                                        int val = (root.child.size() == 0) ? 0 : valueOfExpression(root.child.get(0));# F  h0 z2 B) Q8 f$ [\n                                        for(int i = 1; i < root.child.size(); ++i) {7 l5 g# H3 c8 [  y\n                                                val /= valueOfExpression(root.child.get(i));\n                                        }2 \\7 v3 d; y) S4 V  T\n                                        return val;' W2 z8 C1 P, y* i. g  [\n                                }' F8 D. @1 d8 F/ Q; n\n                        default: return root.val;\n                }                 \n        }\n} \n5 ?- ?' U. Y# L- c  V4 ~: i, ?: A\nclass ENode {2 \\4 `$ I$ Y% H5 N7 b- J+ E\n        char op;# N6 J0 _! ?) X8 P\n        int val;/ A' H# M, i/ ~! v\n        List<ENode> child = new ArrayList<ENode>();\n        public ENode(int val) {\n                op = ' ';# y2 }; j0 T. w3 M) Y& b; j\n                this.val = val;: v4 O) x% r8 W& G\n        }7 W1 a% {. i; H. m. a\n        public ENode(char op) {7 D+ |) Z* g& |: M8 s/ k$ K\n                this.op = op;' \\5 W2 ?# S: F- m2 i5 j\n                val = 0;        & P( O: w+ O* C. f! C\n        }\n}",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
