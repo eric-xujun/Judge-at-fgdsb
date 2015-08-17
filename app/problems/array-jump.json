@@ -1,0 +1,34 @@
+{
+    "name": "Array Jump",
+    "id": "array-jump",
+    "discuss_link": "",
+    "desc": "Given array of whole numbers and a starting index, find out if you can win\n<br>Winning means ending up at an array value of 0\n<br>If you are at a position that has a value that is not a 0, you can move value times to the left or to the right\n<br>[1, 3, 0, 2, 2], i == 0 -> true\n<br>[1, 1], i == 1 -> false",
+    "difficulty": "Easy",
+    "source": "Zenefits",
+    "time": "2015-08-16 21:18:42",
+    "tags": [
+        "DFS"
+    ],
+    "code_cpp": "",
+    "code_java": "",
+    "code_ruby": "",
+    "code_python": "",
+    "code_lua": "",
+    "code_scala": "",
+    "in_type_cpp": [
+        ""
+    ],
+    "ret_type_cpp": "",
+    "out_type_cpp": "",
+    "judge_type_cpp": "equal",
+    "in_type_java": [
+        ""
+    ],
+    "ret_type_java": "",
+    "out_type_java": "",
+    "judge_type_java": "equal",
+    "judge_type_ruby": "equal",
+    "judge_type_python": "equal",
+    "judge_type_lua": "equal",
+    "judge_call": "function(@)"
+}
