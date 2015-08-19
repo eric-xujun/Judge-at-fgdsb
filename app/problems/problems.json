@@ -474,5 +474,12 @@
         "name": "Longest Chain",
         "difficulty": "Hard",
         "source": "Zenefits"
+    },
+    {
+        "time": "2015-08-18 21:37:32",
+        "id": "n-queen-threat",
+        "name": "N-Queen Threat",
+        "difficulty": "Hard",
+        "source": "Zenefits"
     }
 ]
