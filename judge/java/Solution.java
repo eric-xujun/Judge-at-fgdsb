@@ -1,36 +1,53 @@
 package judge;import java.util.*;import java.lang.*;import java.io.*;import datastruct.*; public class Solution{
-    public boolean canWin(int[] array, int start){
-        if(array == null || array.length == 0 || start < 0 || start >= array.length){
-            return false;
+    public static int findLongestChain(String[] words){
+        if(null == words || 0 == words.length){
+                return 0;
+        }
+        //把所有的不同的字符长度都求出来，然后从小到大排好序
+        HashSet<Integer> lengthSet = new HashSet<Integer>();
+        HashMap<Integer, HashSet<String>> stringMap = new HashMap<Integer, HashSet<String>>();
+        HashMap<String, Integer> lengthMap = new HashMap<String, Integer>();
+        int max = 1;
+        for(int i = 0; i < words.length; i++){
+            if(null != words[i]){
+                lengthSet.add(words[i].length());
+                lengthMap.put(words[i], 1);
+                if(!stringMap.containsKey(words[i].length())){
+                    stringMap.put(words[i].length(), new HashSet<String>());
+                }
+                HashSet<String> stringSet = stringMap.get(words[i].length());
+                stringSet.add(words[i]);
+            }                        
         }
         
-        Map<Integer> visited = new HashMap<Integer>();
-        return helper(array, start, visited);
-    }
-    
-    public boolean helper(int[] array, int start, Map<Integer> visited){
-        if(array[start] == 0){
-            true;
+        int[] lengths = new int[lengthSet.size()];
+        Iterator<Integer> lenIter = lengthSet.iterator();
+        int j = 0;
+        while(lenIter.hasNext()){
+                lengths[j++] = lenIter.next();
         }
+        Arrays.sort(lengths);
         
-        visited.put(start, false);
-        boolean canWin = false;
-        if(start - array[start] >= 0){
-            if(visited.contains(start - array[start])){
-                canWin = canWin || visited.get(start - array[start]);
-            }else{
-                canWin = canWin || helper(array, start - array[start], visited);
+        //从长度最短的字符串开始找
+        for(int i = 0; i < lengths.length; i++){
+            HashSet<String> stringSet = stringMap.get(lengths[i]);
+            HashSet<String> lessStringSet = stringMap.get(lengths[i] - 1);
+            if(null != lessStringSet){
+                Iterator<String> iter = stringSet.iterator();
+                while(iter.hasNext()){
+                    String str = iter.next();
+                    for(int k = 0; k < str.length(); k++){
+                        String newStr = str.substring(0, k) + str.substring(k + 1);
+                        if(lessStringSet.contains(newStr)){
+                            int maxLen = Math.max(lengthMap.get(newStr) + 1, lengthMap.get(str)); 
+                            lengthMap.put(str, maxLen);
+                            max = Math.max(maxLen, max);
+                        }
+                    }
+                }
             }
         }
-        
-        if(start + array[start] < array.length){
-            if(visited.contains(start + array[start])){
-                canWin = canWin || visited.get(start + array[start]);
-            }else{
-                canWin = canWin || helper(array, start + array[start], visited);
-            }
-        }
-        
-        return canWin;
+        //In case that all of the strings are null
+        return lengthSet.size() == 0 ? 0 : max;
     }
 }

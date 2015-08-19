@@ -467,5 +467,12 @@
         "name": "Array Jump",
         "difficulty": "Easy",
         "source": "Zenefits"
+    },
+    {
+        "time": "2015-08-18 21:31:16",
+        "id": "longest-chain",
+        "name": "Longest Chain",
+        "difficulty": "Hard",
+        "source": "Zenefits"
     }
 ]
