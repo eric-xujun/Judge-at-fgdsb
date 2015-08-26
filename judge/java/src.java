@@ -4,10 +4,10 @@ import java.lang.*;
 import java.io.*;
 import tests.test_common;
 import datastruct.*;
-import tests.n_queen_threat;
+import tests.tiny_url;
 
 public class src {
     public static void main (String[] args) throws java.lang.Exception {
-        n_queen_threat.judge();
+        tiny_url.judge();
     }
 }

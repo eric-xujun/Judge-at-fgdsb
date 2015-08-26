@@ -481,5 +481,12 @@
         "name": "N-Queen Threat",
         "difficulty": "Hard",
         "source": "Zenefits"
+    },
+    {
+        "time": "2015-08-26 11:57:35",
+        "id": "tiny-url",
+        "name": "Tiny Url",
+        "difficulty": "Medium",
+        "source": "Uber"
     }
 ]
